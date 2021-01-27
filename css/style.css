@@ -8,6 +8,10 @@ body {
   font-family: 'roboto', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .row::after {
   content: "";
   display: table;
@@ -28,8 +32,12 @@ header {
 nav {
   width: 100%;
   padding: 0 10%;
-  font-size: 13px;
+  font-size: 0.75em;
   text-transform: uppercase;
+}
+
+nav ul {
+  line-height: 250%;
 }
 
 nav ul li {
@@ -58,7 +66,7 @@ nav li a:hover {
 }
 
 nav .nav-menu-1 {
-  padding: 2.5% 0 2.5% 15%;
+  padding: 1.5% 0 1.5% 3.5%;
 }
 
  nav .nav-menu-2 {
@@ -74,32 +82,45 @@ nav .nav-menu-1 {
   float: right;
 }
 
-.nav-menu-2 div {
-  margin: 0 10px 0 0;
+.item-menu {
+  padding: 1.5% 0 1.5% 5%;
+  float: right;
 }
 
-.button {
-  padding: 3% 9%;
+.item-menu a{
+  text-decoration: none;
   color: #fff;
-  border-radius: 5px;
-  float: right;
-}
-
-.item-menu-2 {
-  float: right;
 }
 
 .login {
   border: 1px solid #fff;
 }
 
-.button-g {
+.nav-button {
+  padding: 1.5% 5%;
+  float: right;
+  margin: 0 0 0 30px;
+}
+
+.login-button {
+  color: #fff;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+
+.green-button {
   background: #7cbb02;
   color: #fff;
-  padding: 3% 4%;
   border-radius: 5px;
   border: none;
   text-transform: uppercase;
+}
+
+.jumbo-button {
+  padding: 3% 4%;
+  margin: 5% 0 0 0;
 }
 
 /* jumbotron */
@@ -122,7 +143,7 @@ nav .nav-menu-1 {
   width: 45%;
   position: absolute;
   left: 10%;
-  bottom: 25%;
+  bottom: 35%;
 }
 
 .jumbo-text-cont h1 {
