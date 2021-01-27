@@ -293,6 +293,7 @@ main section {
   width: 150px;
   display: inline-block;
   border-bottom: 2px solid #808080;
+  cursor: pointer;
   float: right;
 }
 
