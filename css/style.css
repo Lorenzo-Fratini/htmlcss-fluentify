@@ -1,7 +1,11 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
 }
 
 .row::after {
@@ -14,64 +18,121 @@
 header {
   width: 100%;
   background: #0c325a;
+  background-image: url(../img/background-header.png);
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-position: 110% 110%;
 }
 
 /* nav */
 nav {
   width: 100%;
   padding: 0 10%;
-  /* debug */
-  height: 100px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 10px 0 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li a:hover {
+  color: #7cbb02;
 }
 
 .logo-cont {
-  width: 20%;
+  width: 10%;
+  padding: 1% 0;
   float: left;
-  /* debug */
-  height: 100%;
-  background: green;
 }
 
+.logo-cont img {
+  width: 100%;
+}
+
+nav .nav-menu-1 {
+  padding: 2.5% 0 2.5% 15%;
+}
+
+ nav .nav-menu-2 {
+   padding: 1.5% 0;
+ }
+
 .nav-menu-1 {
-  width: 35%;
   float: left;
-  /* debug */
-  height: 100%;
-  background: red;
 }
 
 .nav-menu-2 {
-  width: 35%;
+  width: 45%;
   float: right;
-  /* debug */
-  height: 100%;
-  background: grey;
+}
+
+.nav-menu-2 div {
+  margin: 0 10px 0 0;
+}
+
+.button {
+  padding: 3% 9%;
+  color: #fff;
+  border-radius: 5px;
+  float: right;
+}
+
+.item-menu-2 {
+  float: right;
+}
+
+.login {
+  border: 1px solid #fff;
+}
+
+.button-g {
+  background: #7cbb02;
+  color: #fff;
+  padding: 3% 4%;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
 }
 
 /* jumbotron */
 .jumbo {
   width: 100%;
-  height: 500px;
-  position: relative;
+  height: 530px;
+
 }
 
-.jumbo-background-image {
-  width: 65%;
+/* .jumbo-background-image {
+  width: 100%;
   height: 100%;
   background-image: url(../img/background-header.png);
   background-size: cover;
   background-repeat: no-repeat;
-  float: right;
-}
+  background-position: right bottom;
+} */
 
 .jumbo-text-cont {
-  width: 40%;
+  width: 45%;
   position: absolute;
   left: 10%;
-  bottom: 170px;
-  /* debug */
-  height: 250px;
-  background: red;
+  bottom: 25%;
+}
+
+.jumbo-text-cont h1 {
+  font-size: 3.5em;
+  color: #fff;
+}
+
+.jumbo-text-cont .button-g {
+  font-size: 1em;
+  margin: 30px 0 0 0;
 }
 
 /* corpo principale */
@@ -81,25 +142,73 @@ main section {
 
 .grey-cont {
   width: 100%;
-  padding: 20px 0;
+  padding: 50px 0;
   background: #d3d3d3;
+}
+
+.grey-cont h2 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.grey-cont h3 {
+  text-align: center;
+  color: #808080;
+  margin: 15px 0 0 0;
+  font-weight: 400;
+  font-size: 1.3em;
 }
 
 /* sezione informazioni */
 .info-cont {
   width: 100%;
   border-bottom: 1px solid #ccc;
-  /* debug */
-  height: 400px;
-  background: green;
 }
 
 .info-box {
   width: 30%;
+  text-align: center;
+  padding: 40px 0;
   float: left;
-  /* debug */
-  height: 100%;
-  background: purple;
+}
+
+.info-box-image {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.img-profile {
+  background-image: url(../img/profile.svg);
+}
+
+.img-computer {
+  background-image: url(../img/computer.svg);
+}
+
+.img-doc {
+  background-image: url(../img/doc.svg);
+}
+
+.info-box-title {
+  margin: 10px 0 0 0;
+  font-size: 1.1em;
+  color: #7cbb02;
+}
+
+.info-box-title::after {
+  content: "";
+  display: table;
+  width: 20%;
+  border-bottom: 1px solid #000;
+  margin: 20px auto;
+}
+
+.info-box-text {
+  color: #808080;
+  margin: 10px 0 0 0;
+  font-size: 1.3em;
 }
 
 .info-box:nth-child(2) {
@@ -109,23 +218,64 @@ main section {
 /* sezione vai al test */
 .test-cont {
   width: 100%;
-  /* debug */
-  height: 400px;
-  background: black;
 }
 
 .test-image-cont {
   width: 60%;
+  height: 500px;
+  padding: 25px;
   float: left;
-  /* debug */
-  height: 100%;
-  background: blue;
+  background-image: url(../img/mountain.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
 }
 
 .test-text {
   width: 40%;
+  padding: 50px 0;
   float: left;
-  /* debug */
-  height: 100%;
-  background: orange;
+}
+
+.test-text h2 {
+  font-size: 2em
+}
+
+.test-text h3 {
+  margin: 20px 0 0 0;
+  font-weight: normal;
+  color: #808080;
+}
+
+.test-text a {
+  display: block;
+  margin: 20px 0 0 0;
+  color: #5686bc;
+}
+
+.plan-cont {
+  width: 100%;
+  padding: 0 10%;
+  background: #d3d3d3;
+}
+
+.plan-text {
+  width: 40%;
+  float: left;
+  font-size: 2em;
+}
+
+.plan-select {
+  width: 40%;
+  float: right;
+}
+
+.select {
+  width: 50%;
+  float: left;
+}
+
+.select-button {
+  width: 50%;
+  float: left;
 }
