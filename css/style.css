@@ -69,7 +69,7 @@ nav .nav-menu-1 {
   padding: 1.5% 0 1.5% 3.5%;
 }
 
- nav .nav-menu-2 {
+nav .nav-menu-2 {
    padding: 1.5% 0;
  }
 
@@ -129,15 +129,6 @@ nav .nav-menu-1 {
   height: 530px;
 
 }
-
-/* .jumbo-background-image {
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/background-header.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-} */
 
 .jumbo-text-cont {
   width: 45%;
@@ -265,6 +256,7 @@ main section {
 .test-text h3 {
   margin: 20px 0 0 0;
   font-weight: normal;
+  font-size: 1.3em;
   color: #808080;
 }
 
@@ -276,14 +268,14 @@ main section {
 
 .plan-cont {
   width: 100%;
-  padding: 0 10%;
+  padding: 60px 10% 0 10%;
   background: #d3d3d3;
 }
 
 .plan-text {
   width: 40%;
-  float: left;
   font-size: 2em;
+  float: left;
 }
 
 .plan-select {
@@ -291,12 +283,43 @@ main section {
   float: right;
 }
 
+.select-cont {
+  width: 55%;
+  padding: 3% 5%;
+  color: #808080;
+  font-size: 1.2em;
+  float: right;
+}
+
 .select {
-  width: 50%;
-  float: left;
+  width: 150px;
+  display: inline-block;
+  border-bottom: 2px solid #808080;
+  float: right;
+}
+
+.button-cont {
+  width: 42%;
+  float: right;
 }
 
 .select-button {
-  width: 50%;
+  padding: 10%;
+}
+
+.select-left {
   float: left;
+}
+
+.select-margin {
+  margin: 0 10px 0 0;
+}
+
+.select-right {
+  float: right;
+}
+
+.select-button:nth-child(2){
+  display: block;
+  margin: 15px auto;
 }
